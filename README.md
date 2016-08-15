@@ -1,10 +1,8 @@
 # jekyons
 Stop writing CSS and start building prototypes.
 
-
 # huh?
 Jekyons is a starting point to build prototypes with Jekyll using functional CSS. A few friends asked to check out my prototyping stack so I cleaned it up a little bit and here we are. I've already fumbled around integrating cool stuff like [BrowserSync](https://www.browsersync.io/) (actual magic) and [18F's jekyll-get](https://github.com/18F/jekyll-get) plugin so you don't have to.
-
 
 # why do I care?
 GR8 question. Writing CSS is hard. Maintaining CSS across a team of developers and multiple projects is absolutely impossible. That makes prototyping, something that should feel natural in concept, a real bummer in practice. The power of Jekyll templating and the maintainability of Tachyons is the closest I've come to solving that problem. 
@@ -23,8 +21,7 @@ Take the list of features on the Jekyons website. Responsive columns, multiple r
 </div>
 ```
 
-If you don't think that's cool you can LEAVE.
-
+DAMN Y'ALL. If you don't think that's cool you can LEAVE.
 
 # ok, how?
 ```
@@ -34,4 +31,6 @@ bundle install
 gulp
 ```
 
+This is definitely in alpha, so if you have any trouble with the steps above, [let me know on Twitter](http://www.twitter.com/joshosbrn)!
+ 
 # thx
