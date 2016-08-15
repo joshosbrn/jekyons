@@ -14,10 +14,10 @@
   description: "With Jekyll's templating engine, you can share partial sections of code across multiple pages. Focus on solving design problems instead of repeating yourself in an unmaintainable way. "
   icon: images/partial.svg
 
-- name: Real Data
+- name: Easy Deployment
+  description: "Ready to share your creation with the world (or your Mom)? Spin up an outside IP using BrowserSync or deploy to Github Pages to share your work with others"
+  icon: images/deploy.svg
+
+- name: Real Data (Coming Soon)
   description: "Parse real API data using 18F's jekyll-get plugin and take your prototypes to the next level. Loop over real data just like you would using local data files."
   icon: images/data.svg
-
-- name: Easy Deployment
-  description: "Spin up an outside IP using BrowserSync or deploy to Github Pages to share your work with others. This deployment method can easily be adapted to production."
-  icon: images/deploy.svg
