@@ -11,3 +11,9 @@ github_username:  joshosbrn
 markdown: kramdown
 
 exclude: [node_modules, gulpfile.js]
+
+# Jekyll Get
+
+jekyll_get:
+  data: team
+  json: 'https://18f.gsa.gov/hub/api/team/'
