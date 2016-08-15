@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (1.1.0)
+    ffi (1.9.14)
     ffi (1.9.14-java)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
@@ -35,6 +36,7 @@ GEM
 
 PLATFORMS
   java
+  ruby
 
 DEPENDENCIES
   jekyll
