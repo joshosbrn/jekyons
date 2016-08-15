@@ -1,0 +1,23 @@
+- name: Functional CSS
+  description: "Front-end code is categorically bad; let's write less of it. Build front-end prototypes quickly with Tachyons, a powerful functional CSS library by Adam Morse."
+  icon: images/functional.svg
+
+- name: Auto-update
+  description: "Using a potent combination of magic and node.js, BrowserSync automatically refreshes your browser every time you save. You can even test on multiple devices all at once using an external IP."
+  icon: images/auto.svg
+
+- name: Actively Maintained
+  description: "I developed Jekyons for use at my day job. That means any updates I decide to make in an attempt to make my job easier get passed on to you in the form of new releases."
+  icon: images/heart.svg
+
+- name: Jekyll Partials
+  description: "With Jekyll's templating engine, you can share partial sections of code across multiple pages. Focus on solving design problems instead of repeating yourself in an unmaintainable way. "
+  icon: images/partial.svg
+
+- name: Real Data
+  description: "Parse real API data using 18F's jekyll-get plugin and take your prototypes to the next level. Loop over real data just like you would using local data files."
+  icon: images/data.svg
+
+- name: Easy Deployment
+  description: "Spin up an outside IP using BrowserSync or deploy to Github Pages to share your work with others. This deployment method can easily be adapted to production."
+  icon: images/deploy.svg
