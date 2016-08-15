@@ -1,5 +1,5 @@
 - name: Functional CSS
-  description: "Front-end code is categorically bad; let's write less of it. Build front-end prototypes quickly with Tachyons, a powerful functional CSS library by Adam Morse."
+  description: "Front-end code is categorically bad and I think you should write less of it. If you're building websites for a living and still writing CSS all the damn time, welcome 2 the future."
   icon: images/functional.svg
 
 - name: Auto-update
@@ -7,11 +7,11 @@
   icon: images/auto.svg
 
 - name: Actively Maintained
-  description: "I developed Jekyons for use at my day job. That means any updates I decide to make in an attempt to make my job easier get passed on to you in the form of new releases."
+  description: "I use Jekyons every day to create prototypes for profit & pleasure. That means any updates I decide to make in an attempt to make my job easier get passed on to you in the form of new features."
   icon: images/heart.svg
 
 - name: Jekyll Partials
-  description: "With Jekyll's templating engine, you can share partial sections of code across multiple pages. Focus on solving design problems instead of repeating yourself in an unmaintainable way. "
+  description: "With Jekyll's templating engine, you can share partial sections of code across multiple pages. Make your :( static prototype :( feel like a ~*fancy app*~."
   icon: images/partial.svg
 
 - name: Easy Deployment
