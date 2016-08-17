@@ -4,16 +4,14 @@ version: "v1"
 description: "Stop writing CSS and start building prototypes."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: joshosbrn
-github_username:  joshosbrn
 
 # Build settings
 markdown: kramdown
 
+# Exclude this stuff
 exclude: [node_modules, gulpfile.js]
 
-# Jekyll Get
-
+# Jekyll Get TK
 jekyll_get:
   data: team
   json: 'https://18f.gsa.gov/hub/api/team/'
