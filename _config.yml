@@ -2,7 +2,7 @@
 title: Jekyons
 version: "v1"
 description: "Stop writing CSS and start building prototypes."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/jekyons" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: joshosbrn
 github_username:  joshosbrn
