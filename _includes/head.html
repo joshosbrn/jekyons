@@ -9,10 +9,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-
   <!-- Styles -->
-  <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.5/css/tachyons.min.css"/>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <link rel="stylesheet" href="https://npmcdn.com/tachyons@{{ site.tv }}/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 </head>
