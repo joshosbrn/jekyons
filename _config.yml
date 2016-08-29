@@ -7,6 +7,9 @@ url: "" # the base hostname & protocol for your site
 twitter_username: joshosbrn
 github_username:  joshosbrn
 
+# Tachyons Version
+tv: "4.0.5"
+
 # Build settings
 markdown: kramdown
 
