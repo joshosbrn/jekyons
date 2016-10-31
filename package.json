@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Stop writing CSS and start building prototypes.",
   "main": "index.js",
+  "repository": "tinychime/jekyons",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
+    "browser-sync": "^2.17.5",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.5.2",
-    "lodash": "^4.15.0"
+    "lodash": "^4.16.4"
   }
 }
