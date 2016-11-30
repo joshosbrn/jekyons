@@ -1,5 +1,5 @@
 # jekyons
-Stop writing CSS and start building prototypes you dummies.
+Stop writing CSS and start building prototypes.
 
 ## huh?
 Jekyons is a starting point you can use to build Very Good prototypes with [Jekyll](http://jekyllrb.com/) (a powerful static site generator) and [Tachyons](http://tachyons.io/) (a life-changing functional CSS library). A few friends asked to check out my prototyping stack so I cleaned it up a little bit and here we are. I've already fumbled around integrating cool stuff like [BrowserSync](https://www.browsersync.io/) (actual magic) and [18F's jekyll-get](https://github.com/18F/jekyll-get) plugin so you don't have to.
