@@ -14,6 +14,10 @@ markdown: kramdown
 # Exclude this stuff
 exclude: [node_modules, gulpfile.js]
 
+# Gems
+gems:
+  - jekyll-seo-tag
+
 # Jekyll Get TK
 jekyll_get:
   data: team
