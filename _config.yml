@@ -17,8 +17,3 @@ exclude: [node_modules, gulpfile.js]
 # Gems
 gems:
   - jekyll-seo-tag
-
-# Jekyll Get TK
-jekyll_get:
-  data: team
-  json: 'https://18f.gsa.gov/hub/api/team/'
