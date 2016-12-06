@@ -7,7 +7,7 @@ Jekyons is a starting point you can use to build Very Good prototypes with [Jeky
 ## why do I care?
 GR8 question. Writing CSS is hard. Maintaining CSS across a team of developers and multiple projects is absolutely impossible. That makes prototyping, something that should feel natural in concept, a real bummer in practice. The power of Jekyll templating and the maintainability of Tachyons is the closest I've come to solving that problem.
 
-Still don't get it? For example, take the list of features on the Jekyons website. Responsive columns, multiple repeating elements in each bucket, images; this could easily amount to over 50 lines of HTML and possibly even more CSS. With Jekyll & Tachyons, I was able to design & build it in ~20 minutes with less than 10 lines of code *total*. Check this shit out:
+Still don't get it? For example, take the list of features on the Jekyons website. Responsive columns, multiple repeating elements in each bucket, images; this could easily amount to over 50 lines of HTML and possibly even more CSS. With Jekyll & Tachyons, I was able to design & build it in ~20 minutes with less than 10 lines of code *total*:
 
 ```
 <div class="ma4 ma5-ns">
@@ -29,6 +29,7 @@ git clone https://github.com/tinychime/jekyons.git your-project
 cd your-project
 npm install
 bundle install
+jekyll build
 gulp
 ```
 
