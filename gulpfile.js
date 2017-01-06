@@ -25,6 +25,10 @@ var comments        = require('postcss-discard-comments');
 var atImport        = require('postcss-import');
 var pump            = require('pump');
 
+var input			= {
+	'css': './css/jekyons.css'
+}
+
 
 // Task for building blog when something changed:
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
