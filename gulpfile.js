@@ -29,6 +29,10 @@ var input			= {
 	'css': './css/jekyons.css'
 }
 
+var output			= {
+	'css': './_site/css'
+}
+
 
 // Task for building blog when something changed:
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
