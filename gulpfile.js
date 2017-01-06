@@ -33,6 +33,34 @@ var output			= {
 	'css': './_site/css'
 }
 
+gulp.task('css', function(){
+
+	var processors 	= [
+		atImport,
+		media,
+		properties,
+		calc,
+		color,
+		comments,
+		autoprefixer,
+		cssnano,
+		mqpacker
+	];
+
+	return gulp.src(input.css)
+		.pipe(postcss(processors))
+
+		.pipe(size({
+			gzip: true,
+			showFiles: true,
+			title: 'Size all gZippered up ->'
+		}))
+
+		.pipe(gulp.dest(output.css))
+
+		.pipe(browserSync.stream())
+});
+
 
 // Task for building blog when something changed:
 gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
