@@ -23,6 +23,7 @@ var media           = require('postcss-custom-media');
 var properties      = require('postcss-custom-properties');
 var comments        = require('postcss-discard-comments');
 var atImport        = require('postcss-import');
+var nested          = require('postcss-nested');
 var pump            = require('pump');
 
 var input			= {
@@ -38,6 +39,7 @@ gulp.task('css', function(){
 	var processors 	= [
 		atImport,
 		media,
+		nested,
 		properties,
 		calc,
 		color,
