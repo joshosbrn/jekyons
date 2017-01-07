@@ -66,7 +66,7 @@ gulp.task('css', function(){
 
 
 // Task for building blog when something changed:
-gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
+gulp.task('build', shell.task(['bundle exec jekyll build']));
 // Or if you don't use bundle:
 // gulp.task('build', shell.task(['jekyll build --watch']));
 
@@ -81,8 +81,7 @@ gulp.task('bs-reload', function(){
 });
 
 // Default gulp task
-gulp.task('default', ['css', 'bs-reload', 'serve'], function() {
-	gulp.start(['css', 'bs-reload']);
+gulp.task('default', ['build', 'css', 'bs-reload', 'serve'], function() {
 	gulp.watch('css/*', ['css']);
 	gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
 });
