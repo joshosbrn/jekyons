@@ -34,6 +34,7 @@ var output			= {
 	'css': './_site/css'
 }
 
+// Task for processing styles
 gulp.task('css', function(){
 
 	var processors 	= [
@@ -70,10 +71,19 @@ gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 // gulp.task('build', shell.task(['jekyll build --watch']));
 
 // Task for serving blog with Browsersync
-gulp.task('serve', function () {
+gulp.task('serve', function() {
     browserSync.init({server: {baseDir: '_site/'}});
-    // Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', reload);
 });
 
-gulp.task('default', ['css', 'build', 'serve']);
+// Task for reloading the browser
+gulp.task('bs-reload', function(){
+	browserSync.reload();
+});
+
+// Default gulp task
+gulp.task('default', ['css', 'bs-reload', 'serve'], function() {
+	gulp.start(['css', 'bs-reload']);
+	gulp.watch('css/*', ['css']);
+	gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
+});
+
