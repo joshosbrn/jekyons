@@ -10,6 +10,7 @@ var gulp            = require('gulp');
 var imagemin        = require('gulp-imagemin');
 var jshint          = require('gulp-jshint');
 var postcss         = require('gulp-postcss');
+var rename          = require('gulp-rename');
 var shell           = require('gulp-shell');
 var size            = require('gulp-size');
 var sourcemaps      = require('gulp-sourcemaps');
@@ -51,12 +52,31 @@ gulp.task('css', function(){
 	];
 
 	return gulp.src(input.css)
+
 		.pipe(postcss(processors))
 
 		.pipe(size({
 			gzip: true,
 			showFiles: true,
 			title: 'Size all gZippered up ->'
+		}))
+
+		.pipe(gulp.dest(output.css))
+
+		.pipe(browserSync.stream())
+});
+
+// Task for removing unused styles from css (for production)
+gulp.task('uncss', function() {
+
+	return gulp.src('_site/css/jekyons.css')
+
+		.pipe(uncss({
+			html: ['_site/**/*.html']
+		}))
+
+		.pipe(rename({
+			prefix: 'un.'
 		}))
 
 		.pipe(gulp.dest(output.css))
