@@ -67,6 +67,7 @@ gulp.task('css', function(){
 });
 
 // Task for removing unused styles from css (for production)
+// Be sure to update the linked to stylesheet to 'un.jekyons.css'
 gulp.task('uncss', function() {
 
 	return gulp.src('_site/css/jekyons.css')
@@ -77,6 +78,12 @@ gulp.task('uncss', function() {
 
 		.pipe(rename({
 			prefix: 'un.'
+		}))
+
+		.pipe(size({
+			gzip: true,
+			showFiles: true,
+			title: 'Size all uncssed ->'
 		}))
 
 		.pipe(gulp.dest(output.css))
@@ -92,11 +99,15 @@ gulp.task('build', shell.task(['bundle exec jekyll build']));
 
 // Task for serving blog with Browsersync
 gulp.task('serve', function() {
-    browserSync.init({server: {baseDir: '_site/'}});
+
+    browserSync.init({
+    	server: {baseDir: '_site/'}
+    });
 });
 
 // Task for reloading the browser
 gulp.task('bs-reload', function(){
+
 	browserSync.reload();
 });
 
@@ -105,4 +116,6 @@ gulp.task('default', ['build', 'css', 'bs-reload', 'serve'], function() {
 	gulp.watch('css/*', ['css']);
 	gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
 });
+
+gulp.task('production', ['build', 'css', 'uncss', 'bs-reload']);
 
