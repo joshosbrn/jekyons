@@ -109,5 +109,6 @@ gulp.task('default', ['build', 'css', 'bs-reload', 'serve'], function() {
 	gulp.watch(['*.html', './**/*.html'], ['bs-reload']);
 });
 
+// Production gulp task
 gulp.task('production', ['build', 'css', 'uncss', 'bs-reload']);
 
