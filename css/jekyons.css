@@ -1,6 +1,3 @@
-/*@import '../node_modules/tachyons/src/tachyons.css';*/
-
-/* External Library Includes */
 @import '../node_modules/tachyons/src/_normalize';
 
 
@@ -58,9 +55,8 @@
 @import '../node_modules/tachyons/src/_styles';
 
 /* Variables */
-/* Importing here will allow you to override any variables in the modules */
-@import '../node_modules/tachyons/src/_colors';
-@import '../node_modules/tachyons/src/_media-queries';
+@import './_variables';
+@import './_media-queries';
 
 /* Debugging */
 @import '../node_modules/tachyons/src/_debug-children';
@@ -69,4 +65,4 @@
 /* Uncomment out the line below to help debug layout issues */
 /* @import '../node_modules/tachyons/src/_debug'; */
 
-@import './_overrides';
+@import './_customs';
