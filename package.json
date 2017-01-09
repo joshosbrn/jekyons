@@ -16,7 +16,6 @@
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.2.0",
-    "gulp-rename": "^1.2.2",
     "gulp-shell": "^0.5.2",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.9.1",

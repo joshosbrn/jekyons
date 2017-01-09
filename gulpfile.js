@@ -5,7 +5,6 @@ var mqpacker        = require('css-mqpacker');
 var cssnano         = require('cssnano');
 var gulp            = require('gulp');
 var postcss         = require('gulp-postcss');
-var rename          = require('gulp-rename');
 var shell           = require('gulp-shell');
 var size            = require('gulp-size');
 var sourcemaps      = require('gulp-sourcemaps');
@@ -59,17 +58,12 @@ gulp.task('css', function(){
 });
 
 // Task for removing unused styles from css (for production)
-// Be sure to update the linked to stylesheet to 'un.jekyons.css'
 gulp.task('uncss', function() {
 
 	return gulp.src('_site/css/jekyons.css')
 
 		.pipe(uncss({
 			html: ['_site/**/*.html']
-		}))
-
-		.pipe(rename({
-			prefix: 'un.'
 		}))
 
 		.pipe(size({
