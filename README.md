@@ -9,7 +9,7 @@ GR8 question. Writing CSS is hard. Maintaining CSS across a team of developers a
 
 Still don't get it? For example, take the list of features on the Jekyons website. Responsive columns, multiple repeating elements in each bucket, images; this could easily amount to over 50 lines of HTML and possibly even more CSS. With Jekyll & Tachyons, I was able to design & build it in ~20 minutes with less than 10 lines of code *total*:
 
-```
+```hbs
 <div class="ma4 ma5-ns">
   {% for feature in site.data.features %}
   <div class="w-33-l pr4 mb5 fl-l mt4 cf-4th p-fix">
